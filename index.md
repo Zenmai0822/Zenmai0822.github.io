@@ -1,6 +1,6 @@
 ---
 layout: home
-title: A Group of Hitori
+title: Home
 ---
 
 ## Hi
