@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Nianmin Guo
+title: A Group of Hitori
 ---
-# Htr Group
 
+## Hi
 
-Personal Page of Nianmin Guo
+This is the personal page/blog/website of Nianmin Guo.
