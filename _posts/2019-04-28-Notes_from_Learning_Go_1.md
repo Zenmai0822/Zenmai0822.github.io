@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Notes from Learning Go, Part 1"
-categories: misc
+categories: go 
 ---
 
 Here are my notes for learning `go`. I am following along with O'Reilly's [Head First Go](https://www.amazon.com/dp/1491969555/). They did a good job making the book, as well as making it looks like it's from 2006.
 
 ## Painful Things
 
-- There can't be two files in the same folder that has `package main` and `main()` declared in each file. Thus, my playground files are organized in one file with all the functions defined, and a `main()` that runs them all (for now). 
+- ~~There can't be two files in the same folder that has `package main` and `main()` declared in each file. Thus, my playground files are organized in one file with all the functions defined, and a `main()` that runs them all (for now).~~
+  - Only packages that is designed to be executable should use `main` as package name, thus it is impossible to have two `main()` defined in two separate files. 
 
 - The [Go Plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go) of VSCode uses `goreturns` as its formatting tool as default, and it will remove any unused `import` statements upon save. 
 
