@@ -4,9 +4,13 @@ title: "Notes from Learning Go, Part 2"
 categories: go
 ---
 
+Relevant code is located at [`sqrt.go`](https://github.com/Zenmai0822/goplayground/blob/master/sqrt.go)
+
 ## Structure
 
-Apparently O'Reilly's book did not teach project structure early on (Nothing as of Location 1707). A go project should vaguely look something like this in terms of folder structure. The following path tree is the `$GOPATH`. You might not have it defined in your environment variables, and a default of `~/go` is used in this case. However, 
+Apparently O'Reilly's book did not teach project structure early on (Nothing as of Location 1707[^1]). A go project should vaguely look something like this in terms of folder structure. The following path tree is the `$GOPATH`. You might not have it defined in your environment variables, and a default of `~/go` is used in this case. However, 
+
+[^1]: **Update (2019-04-29 22:52):** It's in Chapter 4. Location 2015 if you are using Kindle.
 
 ```
 .

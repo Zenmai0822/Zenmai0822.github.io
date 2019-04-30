@@ -6,6 +6,8 @@ categories: go
 
 Here are my notes for learning `go`. I am following along with O'Reilly's [Head First Go](https://www.amazon.com/dp/1491969555/). They did a good job making the book, as well as making it looks like it's from 2006.
 
+Relevant code is located at [`notes1.go`](https://github.com/Zenmai0822/goplayground/blob/master/notes1.go) and [`guessNum.go`](https://github.com/Zenmai0822/goplayground/blob/master/guessNum.go).
+
 ## Painful Things
 
 - ~~There can't be two files in the same folder that has `package main` and `main()` declared in each file. Thus, my playground files are organized in one file with all the functions defined, and a `main()` that runs them all (for now).~~
