@@ -2,6 +2,7 @@ title: A Group of Hitori
 author: Nianmin Guo
 theme: minima
 show_excerpts: false
-markdown: redcarpet
-redcarpet:
-  extensions: ["strikethrough"]
+markdown: kmarkdown
+minima:
+    social_links:
+        github: Zenmai0822

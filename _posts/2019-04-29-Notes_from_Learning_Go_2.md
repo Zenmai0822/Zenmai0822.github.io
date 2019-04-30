@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes from Learning Go, Part 2"
-categories: misc
+categories: go
 ---
 
 ## Structure
