@@ -18,6 +18,37 @@ Relevant code is located at [`pointers.go`](https://github.com/Zenmai0822/goplay
 - `&varName` is the pointer of variable `varName`, the pointer has a type shown as `*varType`
 - To access the value the pointer is pointing to, use `*pointer`.
 
+### Pointer Scope
+
+- Pointers work across scopes -- variables defined in one function can get its value mutated by passing the pointer of that variable to other functions. Those other mutating functions can take the pointer and mutate the value of the pointer.
+- Pointers can be returned by a function, or not.
+
+```go
+// mutatePointers mutates a pointer of int using two manipulation functions.
+// One mutates the pointer in place, and one returns the modified pointer
+func mutatePointers() {
+	three := 3
+	pointerOfThree := &three
+	fmt.Printf("Value of variable 'three': %d\n", three)
+	plusOnePointer(pointerOfThree)
+	fmt.Printf("Value of variable 'three', after mutation by pointer: %d\n", three)
+	mutatedPointer := plusOneThenReturnPointer(pointerOfThree)
+	fmt.Printf("Value of variable 'three', after mutation again using plusOneThenReturnPointer(): %d\n", *mutatedPointer)
+}
+
+// plusOnePointer mutates the incoming pointer and returns nothing
+func plusOnePointer(numPointer *int) {
+	*numPointer++
+}
+
+// plusOneThenReturnPointer mutates and then changes the incoming pointer
+func plusOneThenReturnPointer(numPointer *int) *int {
+	*numPointer++
+	return numPointer
+}
+
+```
+
 ## Warnings
 
 I am using `go vet` through the VSCode Go plugin. It will warn you in the following cases:
