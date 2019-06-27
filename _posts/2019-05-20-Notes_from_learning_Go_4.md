@@ -22,6 +22,15 @@ Relevant code is located at [`threeSum.go`](https://github.com/Zenmai0822/goplay
 go install path/to/src
 ```
 
+### Make Executables Smaller
+
+```bash
+# removes debug information for linker
+go build --ldflags="-s -w"
+# compress further using upx, install upx first
+upx ./[BIN_NAME]
+```
+
 ## Make Documentation
 
 ```bash
