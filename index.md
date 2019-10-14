@@ -11,7 +11,7 @@ I am a recent Northeastern University B.S. grad, currently interning at Mass. Ba
 
 There is no app here (yet). Both hitori.io and htr.io were taken, I had no choice.
 
-[Résumé *<sup>2019-09-23 Mon</sup>*](assets/htr/Guo_Nianmin.pdf) \| [Github](https://github.com/Zenmai0822) \| [Work Github](https://github.com/nianminguo) \| `ng [at] hitori [dot] app`
+[Résumé *<sup>2019-10-14 Mon</sup>*](assets/htr/Guo_Nianmin.pdf) \| [Github](https://github.com/Zenmai0822) \| [Work Github](https://github.com/nianminguo) \| `ng [at] hitori [dot] app`
 
 # Lists
 
