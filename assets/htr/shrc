@@ -1,0 +1,60 @@
+# default editor
+export EDITOR=/usr/local/bin/vim
+
+# dir aliases
+alias cdds='cd ~/Desktop'
+alias cddo='cd ~/Documents'
+alias cddr='cd ~/Drive/Documents'
+alias cd18='cd ~/Drive/Documents/2018-2019'
+alias cdv='cd ~/Documents/venv'
+alias cdg='cd ~/Documents/git-playground/'
+alias cdc='cd ~/Documents/course-git-playground/'
+alias cddl='cd ~/Downloads'
+alias cdgo='cd ~/go'
+
+# program aliases, shortcuts
+alias gs='git status'
+alias gb='git branch #' # To make it show status only
+alias glog='git log --stat #'
+alias ii='open'
+alias profile='vim ~/.htr_profile'
+alias vimrc='vim ~/.vimrc'
+alias bi='brew install'
+alias bu='brew update; brew upgrade'
+alias p3i='pip3 install'
+alias resetlaunchpad='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
+alias hrk='heroku'
+alias rnra='react-native run-android'
+alias rnri='react-native run-ios'
+alias ch='code ./'
+alias cpph='pwd | pbcopy'
+alias p3='python3'
+alias hgrep='history | grep'
+alias dkr='docker'
+alias kctl='kubectl'
+alias mku='minikube'
+alias respace="sed -i '' 's/ / /g'"
+
+# Does not work on smartisan
+alias rnram='adb shell input keyevent 82'
+
+alias sauce='source ~/.htr_profile'
+alias ls='ls -FAGl'
+alias ll='ls -FAGl'
+alias deletepyc='find . -name "*.pyc" -delete'
+
+alias tls='tmux list-sessions'
+alias tat='tmux attach -t'
+
+alias "?"="tldr"
+alias "??"="man"
+# alias emacs='vim'
+
+# run jekyll server
+alias bejs="bundle exec jekyll serve"
+
+cl () { cd "$1"; ls -FAGl; }
+
+cfp () {echo $PWD/"$1" | pbcopy}
+
+cpb () {cat "$1" | pbcopy}

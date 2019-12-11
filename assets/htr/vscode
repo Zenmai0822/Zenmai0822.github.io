@@ -1,0 +1,120 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.minimap.maxColumn": 100,
+    "editor.wordWrapColumn": 100,
+    "editor.fontLigatures": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "window.zoomLevel": 0,
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}${separator}${appName}",
+    "editor.renderWhitespace": "all",
+    "telemetry.enableTelemetry": false,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex + bibtex",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "editor.lineHeight": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.fontFamily": "Iosevka",
+    "terminal.integrated.fontSize": 14,
+    "editor.cursorBlinking": "blink",
+    "editor.wordWrap": "on",
+    "editor.formatOnType": true,
+    "spellright.notificationClass": "warning",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.fontSize": 14,
+    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
+    "breadcrumbs.enabled": true,
+    "python.venvPath": "~/.virtualenvs",
+    "debug.inlineValues": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "vim.disableExtension": false,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "solidity.soliumRules": {
+        "imports-on-top": 0,
+        "variable-declarations": 0,
+        "indentation": false, 
+        "quotes": [
+            "error",
+            "double"
+        ]
+    },
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "$pythonPath -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "go.useLanguageServer": true,
+    "terminal.integrated.inheritEnv": false
+}

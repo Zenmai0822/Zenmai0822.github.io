@@ -1,0 +1,62 @@
+" vimrc of Nianmin Guo
+" No intention of universal use
+" December 2019
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+"Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown'
+"Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/vim-easy-align'
+Plug 'mattn/emmet-vim'
+Plug 'othree/html5.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Valloric/MatchTagAlways'
+Plug 'tpope/vim-surround'
+Plug 'vim-syntastic/syntastic'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'altercation/vim-colors-solarized'
+Plug 'rizzatti/dash.vim'
+Plug 'Valloric/YouCompleteMe'
+"Plug 'scrooloose/nerdcommenter'
+"Plug 'tomlion/vim-solidity'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/fzf.vim'
+"Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+call plug#end()
+
+syntax on
+
+set number
+set softtabstop=0
+set expandtab
+set shiftwidth=4
+set smarttab
+set tabstop=4
+
+set backspace=2
+set background=dark
+
+filetype plugin on
+filetype indent on
+
+let g:ycm_python_binary_path = 'python3'
+let g:pymode_python = 'python3'
+let g:syntastic_mode_map = {'passive_filetyoes': ['python']}
+
+map <C-n> :NERDTreeToggle<CR>
+
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+set rtp+=/usr/local/opt/fzf
+
+let g:UltiSnipsExpandTrigger="<S-Tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
